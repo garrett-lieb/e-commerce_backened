@@ -6,12 +6,29 @@ const { Product, Category, Tag, ProductTag } = require('../../models');
 // get all products
 router.get('/', async (req, res) => {
   // find all products
+  try {
+    const allProducts = await Product.findAll({
+      include: [{ model: Category }, { model: Tag, through: ProductTag }],
+    });
+    res.status(200).json(allProducts);
+  } catch (error) {
+    res.status(500).json(error);
+  }
   // be sure to include its associated Category and Tag data
 });
 
 // get one product
-router.get('/:id', (req, res) => {
+router.get('/:id', async (req, res) => {
   // find a single product by its `id`
+  try {
+    const oneProduct = await Product.findOne({
+      where: { id: req.params.id },
+      include: [{ model: Category }, { model: Tag, through: ProductTag }],
+    });
+    res.status(200).json(oneProduct);
+  } catch (error) {
+    res.status(500).json(error);
+  }
   // be sure to include its associated Category and Tag data
 });
 
@@ -48,7 +65,7 @@ router.post('/', (req, res) => {
 });
 
 // update product
-router.put('/:id', (req, res) => {
+router.put('/:id', async (req, res) => {
   // update product data
   Product.update(req.body, {
     where: {
@@ -92,7 +109,14 @@ router.put('/:id', (req, res) => {
     });
 });
 
-router.delete('/:id', (req, res) => {
+router.delete('/:id', async (req, res) => {
+  try {
+    const deleteProduct = await Product.destroy({ where: { id: req.params.id } });
+    res.status(200).json(deleteProduct);
+  }
+  catch (error) {
+    res.status(500).json(error);
+  }
   // delete one product by its `id` value
 });
 
