@@ -18,8 +18,7 @@ N/A
 
 ## Credits
 
-Commits on _______ were achieved during turoting session with EdX tutor Rene Trevino on Feb 7, 2024
-
+Commits on Wed Feb 7 2024 from 12pm-12:50pm PST were achieved during turoting session with EdX tutor Rene Trevino
 
 
 ## Liscence
