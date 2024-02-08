@@ -2,15 +2,27 @@
 
 ## Description
 
-<img src="/README/assets/1.png" width="100%" height="100%">
+This code was developed as a class exercise to learn about backend database managemnet and api/SQL routing using a basic, fictitiuous ecommerce site as an example.
+ Using the command line interface and insomnia, the user can execute the code and view, create, and delete data from a seeded database. 
+
+<!-- <img src="/README/assets/1.png" width="100%" height="100%">
 <img src="/README/assets/2.png" width="100%" height="100%">
-<img src="/README/assets/3.png" width="100%" height="100%">
+<img src="/README/assets/3.png" width="100%" height="100%"> -->
 
 
 
 ## Usage
 
+the user should:
 
+Run "npm install" if they have not alreadt in their command line interface to download the required node packages in their local environment
+CD into the "main" folder
+Execute the command "mysql -u root-p"; enter their password
+    enter "SOURCE db/scehma.sql"
+    enter "quit"
+Execute the command "node seeds/index.js"
+Start the sever using the command "npm start" or "npm run watch"
+From their the user can create GET, PUT, and DELETE routes in their Insomnia application 
 
 ## Installation
 
