@@ -5,9 +5,9 @@
 This code was developed as a class exercise to learn about backend database managemnet and api/SQL routing using a basic, fictitiuous ecommerce site as an example.
  Using the command line interface and insomnia, the user can execute the code and view, create, and delete data from a seeded database. 
 
-<!-- <img src="README_assets/1.png" width="100%" height="100%">
+<img src="README_assets/1.png" width="100%" height="100%">
 <img src="README_assets/2.png" width="100%" height="100%">
-<img src="README_assets/3.png" width="100%" height="100%"> -->
+<img src="README_assets/3.png" width="100%" height="100%">
 
 
 
