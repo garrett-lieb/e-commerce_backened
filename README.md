@@ -15,14 +15,14 @@ This code was developed as a class exercise to learn about backend database mana
 
 the user should:
 
-Run "npm install" if they have not alreadt in their command line interface to download the required node packages in their local environment <br>
-CD into the "main" folder <br>
-Execute the command "mysql -u root-p"; enter their password <br>
-    enter "SOURCE db/scehma.sql" <br>
-    enter "quit" <br>
-Execute the command "node seeds/index.js" <br>
-Start the sever using the command "npm start" or "npm run watch" <br>
-From their the user can create GET, PUT, and DELETE routes in their Insomnia application 
+-- Run "npm install" if they have not alreadt in their command line interface to download the required node packages in their local environment <br>
+-- CD into the "main" folder <br>
+-- Execute the command "mysql -u root-p"; enter their password <br>
+&emsp -- enter "SOURCE db/scehma.sql" <br>
+&emsp -- enter "quit" <br>
+-- Execute the command "node seeds/index.js" <br>
+-- Start the sever using the command "npm start" or "npm run watch" <br>
+-- From their the user can create GET, PUT, and DELETE routes in their Insomnia application 
 
 ## Installation
 
